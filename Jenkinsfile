@@ -12,10 +12,10 @@ pipeline {
       }
     }
 
-    stage('Build & Push Docker Image') {
+    stage('Use Minikube Docker') {
       steps {
+        sh 'eval $(minikube docker-env)'
         sh 'docker build -t $IMAGE_NAME .'
-        sh 'docker push $IMAGE_NAME'
       }
     }
   }
