@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = "localhost:5010/go-hello:latest"
+    IMAGE_NAME = "host.docker.internal:5010/go-hello:latest"
   }
 
   stages {
