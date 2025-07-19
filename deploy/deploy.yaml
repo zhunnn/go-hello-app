@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-hello
-          image: localhost:5000/go-hello:latest
+          image: localhost:5010/go-hello:latest
           ports:
             - containerPort: 8080
 ---
